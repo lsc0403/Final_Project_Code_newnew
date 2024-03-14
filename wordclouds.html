@@ -1,0 +1,69 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Movie Reviews Wordclouds</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f8f9fa;
+                margin: 0;
+                padding: 20px;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .title {
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 24px;
+            }
+            .btn {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                font-size: 16px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            .btn:hover {
+                background-color: #0056b3;
+            }
+            .wordcloud-img {
+                display: none;
+                max-width: 100%;
+                height: auto;
+                margin-top: 10px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            }
+        </style>
+        <script>
+        function showWordcloud(movie) {
+            var image = document.getElementById(movie);
+            if (image.style.display === 'none') {
+                image.style.display = 'block';
+            } else {
+                image.style.display = 'none';
+            }
+        }
+        </script>
+    </head>
+    <body>
+    <div class="container">
+        <h2 class="title">Word Clouds</h2>
+    <button class='btn' onclick='showWordcloud("Back to the Future")'>Back to the Future</button><img id='Back to the Future' class='wordcloud-img' src='wordcloud_images/Back to the Future_wordcloud.png'><button class='btn' onclick='showWordcloud("City of God")'>City of God</button><img id='City of God' class='wordcloud-img' src='wordcloud_images/City of God_wordcloud.png'><button class='btn' onclick='showWordcloud("Forrest Gump")'>Forrest Gump</button><img id='Forrest Gump' class='wordcloud-img' src='wordcloud_images/Forrest Gump_wordcloud.png'><button class='btn' onclick='showWordcloud("Inception")'>Inception</button><img id='Inception' class='wordcloud-img' src='wordcloud_images/Inception_wordcloud.png'><button class='btn' onclick='showWordcloud("Life Is Beautiful")'>Life Is Beautiful</button><img id='Life Is Beautiful' class='wordcloud-img' src='wordcloud_images/Life Is Beautiful_wordcloud.png'><button class='btn' onclick='showWordcloud("Parasite")'>Parasite</button><img id='Parasite' class='wordcloud-img' src='wordcloud_images/Parasite_wordcloud.png'><button class='btn' onclick='showWordcloud("Psycho")'>Psycho</button><img id='Psycho' class='wordcloud-img' src='wordcloud_images/Psycho_wordcloud.png'><button class='btn' onclick='showWordcloud("Spider-Man: Across the Spider-Verse")'>Spider-Man: Across the Spider-Verse</button><img id='Spider-Man: Across the Spider-Verse' class='wordcloud-img' src='wordcloud_images/Spider-Man: Across the Spider-Verse_wordcloud.png'><button class='btn' onclick='showWordcloud("Spirited Away")'>Spirited Away</button><img id='Spirited Away' class='wordcloud-img' src='wordcloud_images/Spirited Away_wordcloud.png'><button class='btn' onclick='showWordcloud("Star Wars: Episode IV - A New Hope")'>Star Wars: Episode IV - A New Hope</button><img id='Star Wars: Episode IV - A New Hope' class='wordcloud-img' src='wordcloud_images/Star Wars: Episode IV - A New Hope_wordcloud.png'><button class='btn' onclick='showWordcloud("Terminator 2: Judgment Day")'>Terminator 2: Judgment Day</button><img id='Terminator 2: Judgment Day' class='wordcloud-img' src='wordcloud_images/Terminator 2: Judgment Day_wordcloud.png'><button class='btn' onclick='showWordcloud("The Dark Knight")'>The Dark Knight</button><img id='The Dark Knight' class='wordcloud-img' src='wordcloud_images/The Dark Knight_wordcloud.png'><button class='btn' onclick='showWordcloud("The Godfather")'>The Godfather</button><img id='The Godfather' class='wordcloud-img' src='wordcloud_images/The Godfather_wordcloud.png'><button class='btn' onclick='showWordcloud("The Green Mile")'>The Green Mile</button><img id='The Green Mile' class='wordcloud-img' src='wordcloud_images/The Green Mile_wordcloud.png'><button class='btn' onclick='showWordcloud("The Lord of the Rings: The Return of the King")'>The Lord of the Rings: The Return of the King</button><img id='The Lord of the Rings: The Return of the King' class='wordcloud-img' src='wordcloud_images/The Lord of the Rings: The Return of the King_wordcloud.png'><button class='btn' onclick='showWordcloud("The Matrix")'>The Matrix</button><img id='The Matrix' class='wordcloud-img' src='wordcloud_images/The Matrix_wordcloud.png'><button class='btn' onclick='showWordcloud("The Pianist")'>The Pianist</button><img id='The Pianist' class='wordcloud-img' src='wordcloud_images/The Pianist_wordcloud.png'><button class='btn' onclick='showWordcloud("The Shawshank Redemption")'>The Shawshank Redemption</button><img id='The Shawshank Redemption' class='wordcloud-img' src='wordcloud_images/The Shawshank Redemption_wordcloud.png'><button class='btn' onclick='showWordcloud("Transformers: Rise of the Beasts")'>Transformers: Rise of the Beasts</button><img id='Transformers: Rise of the Beasts' class='wordcloud-img' src='wordcloud_images/Transformers: Rise of the Beasts_wordcloud.png'>
+    </div>
+    </body>
+    </html>
+    
